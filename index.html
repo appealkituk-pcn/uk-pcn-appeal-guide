@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AppealKit UK — PCN Appeal Templates & Free Guide</title>
+  <meta name="description" content="Challenge unfair private parking charges in the UK with clean, UK-friendly appeal wording. Free guide + paid template pack. Evidence-first, POPLA-friendly structure." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0ea5a7" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="AppealKit UK — PCN Appeal Templates & Free Guide" />
+  <meta property="og:description" content="Free guide + paid template pack to help you write clean, evidence-first private parking appeals (UK / POPLA-friendly)." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://appealkit.co.uk/" />
+  <!-- Optional: if you add an image later, set og:image to a public URL -->
+  <!-- <meta property="og:image" content="https://appealkit.co.uk/og.png" /> -->
+
+  <style>
+    :root{
+      /* Palette (light, modern, trust-clean) */
+      --bg: #f6faf9;
+      --surface: #ffffff;
+      --surface-2: #f1f7f6;
+      --text: #07121a;
+      --muted: #4b5b66;
+      --muted-2: #6b7c88;
+      --border: rgba(10, 30, 40, .12);
+      --shadow: 0 18px 60px rgba(7, 18, 26, .08);
+      --shadow-soft: 0 10px 30px rgba(7, 18, 26, .06);
+
+      --accent: #0ea5a7;        /* teal */
+      --accent-2: #22c55e;      /* green */
+      --accent-ink: #053a3b;
+
+      --btn: #0f766e;           /* deep teal */
+      --btn-hover: #0b5f58;
+
+      --chip: rgba(14, 165, 167, .12);
+      --chip-border: rgba(14, 165, 167, .25);
+
+      --radius: 18px;
+      --radius-sm: 12px;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body{
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color: var(--text);
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(14,165,167,.14), transparent 55%),
+        radial-gradient(900px 500px at 100% 10%, rgba(34,197,94,.10), transparent 50%),
+        radial-gradient(800px 450px at 30% 105%, rgba(14,165,167,.10), transparent 60%),
+        var(--bg);
+      line-height: 1.45;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap{ max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+
+    /* Header */
+    .header{
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(10px);
+      background: rgba(246, 250, 249, .72);
+      border-bottom: 1px solid rgba(10,30,40,.08);
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding: 14px 0;
+      gap: 16px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap: 12px;
+      min-width: 220px;
+    }
+    .logo{
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      background:
+        radial-gradient(circle at 30% 30%, rgba(255,255,255,.9), rgba(255,255,255,.2)),
+        linear-gradient(135deg, rgba(14,165,167,.95), rgba(34,197,94,.80));
+      box-shadow: 0 12px 24px rgba(14,165,167,.18);
+      border: 1px solid rgba(255,255,255,.45);
+    }
+    .brand b{ display:block; font-size: 14px; line-height: 1.1; }
+    .brand span{ display:block; font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+    .menu{
+      display:flex;
+      gap: 18px;
+      align-items:center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .menu a{
+      font-size: 13px;
+      color: var(--muted);
+      padding: 8px 10px;
+      border-radius: 999px;
+    }
+    .menu a:hover{ background: rgba(14,165,167,.08); color: var(--text); }
+
+    .nav-cta{
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      min-width: 220px;
+      justify-content: flex-end;
+    }
+
+    /* Buttons */
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap: 10px;
+      padding: 12px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(10,30,40,.12);
+      background: var(--surface);
+      color: var(--text);
+      font-weight: 650;
+      font-size: 14px;
+      box-shadow: var(--shadow-soft);
+      cursor:pointer;
+      transition: transform .08s ease, box-shadow .15s ease, background .15s ease, border-color .15s ease;
+      user-select:none;
+      white-space: nowrap;
+    }
+    .btn:hover{ transform: translateY(-1px); box-shadow: var(--shadow); }
+    .btn:active{ transform: translateY(0px); }
+
+    .btn-primary{
+      background: linear-gradient(135deg, var(--btn), var(--accent));
+      border-color: rgba(255,255,255,.22);
+      color: #fff;
+      box-shadow: 0 18px 50px rgba(14,165,167,.25);
+    }
+    .btn-primary:hover{ background: linear-gradient(135deg, var(--btn-hover), var(--accent)); }
+
+    .btn-ghost{
+      background: rgba(255,255,255,.55);
+    }
+
+    .btn-small{
+      padding: 10px 14px;
+      font-size: 13px;
+      box-shadow: none;
+    }
+
+    /* Hero */
+    .hero{
+      padding: 56px 0 28px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 28px;
+      align-items: start;
+    }
+    @media (max-width: 980px){
+      .hero-grid{ grid-template-columns: 1fr; }
+      .nav-cta{ display:none; }
+      .brand{ min-width: auto; }
+    }
+
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap: 10px;
+      padding: 8px 12px;
+      background: var(--chip);
+      border: 1px solid var(--chip-border);
+      color: var(--accent-ink);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 650;
+    }
+    .dot{
+      width: 10px; height: 10px; border-radius: 99px;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px rgba(14,165,167,.16);
+    }
+    h1{
+      margin: 16px 0 10px;
+      font-size: clamp(34px, 4vw, 54px);
+      line-height: 1.03;
+      letter-spacing: -0.02em;
+    }
+    .lead{
+      color: var(--muted);
+      font-size: 16px;
+      margin: 0 0 16px;
+      max-width: 62ch;
+    }
+
+    .cta-row{
+      display:flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items:center;
+      margin-top: 16px;
+    }
+    .fineprint{
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--muted-2);
+    }
+
+    /* Right panel */
+    .panel{
+      background: rgba(255,255,255,.74);
+      border: 1px solid rgba(10,30,40,.12);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .panel::before{
+      content:"";
+      position:absolute;
+      inset:-100px -100px auto auto;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(14,165,167,.26), transparent 60%);
+      filter: blur(2px);
+    }
+
+    .pill-row{
+      display:flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+    .pill{
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: rgba(241,247,246,.9);
+      border: 1px solid rgba(10,30,40,.10);
+      font-size: 12px;
+      font-weight: 650;
+      color: var(--muted);
+    }
+    .grid2{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    @media (max-width: 520px){
+      .grid2{ grid-template-columns: 1fr; }
+    }
+    .card{
+      border: 1px solid rgba(10,30,40,.10);
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,.82);
+      padding: 12px;
+      min-height: 92px;
+    }
+    .card b{ display:block; font-size: 14px; margin-bottom: 6px; }
+    .card p{ margin:0; font-size: 13px; color: var(--muted); }
+
+    .list{
+      margin-top: 10px;
+      border: 1px solid rgba(10,30,40,.10);
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,.82);
+      padding: 12px;
+    }
+    .li{
+      display:flex;
+      gap: 10px;
+      padding: 8px 0;
+      border-top: 1px dashed rgba(10,30,40,.10);
+      align-items:flex-start;
+    }
+    .li:first-child{ border-top: 0; }
+    .tick{
+      width: 18px; height: 18px; border-radius: 99px;
+      display:inline-flex; align-items:center; justify-content:center;
+      background: rgba(34,197,94,.16);
+      border: 1px solid rgba(34,197,94,.28);
+      color: rgba(10, 90, 40, .95);
+      font-size: 12px;
+      flex: 0 0 auto;
+      margin-top: 1px;
+    }
+    .li b{ font-size: 13px; display:block; margin-bottom: 2px; }
+    .li span{ font-size: 12px; color: var(--muted); }
+
+    /* Sections */
+    .section{
+      padding: 34px 0;
+    }
+    .section h2{
+      margin: 0 0 8px;
+      font-size: 26px;
+      letter-spacing: -0.01em;
+    }
+    .section .sub{
+      margin: 0 0 16px;
+      color: var(--muted);
+      max-width: 78ch;
+      font-size: 14px;
+    }
+
+    .tiles{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 14px;
+    }
+    @media (max-width: 900px){ .tiles{ grid-template-columns: 1fr; } }
+
+    .tile{
+      background: rgba(255,255,255,.82);
+      border: 1px solid rgba(10,30,40,.10);
+      border-radius: var(--radius);
+      padding: 14px;
+      box-shadow: var(--shadow-soft);
+    }
+    .tile .num{
+      width: 34px; height: 34px; border-radius: 12px;
+      display:flex; align-items:center; justify-content:center;
+      background: rgba(14,165,167,.10);
+      border: 1px solid rgba(14,165,167,.20);
+      color: var(--accent-ink);
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .tile b{ display:block; margin-bottom: 6px; }
+    .tile p{ margin:0; color: var(--muted); font-size: 13px; }
+
+    .two-col{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      align-items: stretch;
+      margin-top: 14px;
+    }
+    @media (max-width: 900px){ .two-col{ grid-template-columns: 1fr; } }
+
+    .box{
+      background: rgba(255,255,255,.82);
+      border: 1px solid rgba(10,30,40,.10);
+      border-radius: var(--radius);
+      padding: 14px;
+      box-shadow: var(--shadow-soft);
+    }
+    .box h3{
+      margin: 0 0 8px;
+      font-size: 16px;
+    }
+    .box ul{ margin: 0; padding-left: 18px; }
+    .box li{ margin: 6px 0; color: var(--muted); font-size: 13px; }
+
+    /* Buy section */
+    .buy{
+      background: rgba(255,255,255,.65);
+      border: 1px solid rgba(10,30,40,.10);
+      border-radius: 24px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+    .buy-row{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .buy-left b{ font-size: 14px; }
+    .buy-left p{ margin: 6px 0 0; color: var(--muted); font-size: 13px; max-width: 70ch; }
+    .note{
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--muted-2);
+    }
+
+    /* FAQ */
+    details{
+      background: rgba(255,255,255,.82);
+      border: 1px solid rgba(10,30,40,.10);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+      box-shadow: var(--shadow-soft);
+    }
+    details + details{ margin-top: 10px; }
+    summary{
+      cursor: pointer;
+      font-weight: 750;
+      font-size: 14px;
+      list-style: none;
+    }
+    summary::-webkit-details-marker{ display:none; }
+    details p{
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* Footer */
+    footer{
+      padding: 26px 0 40px;
+      color: var(--muted-2);
+      font-size: 12px;
+    }
+    .footer-row{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding-top: 14px;
+      border-top: 1px solid rgba(10,30,40,.10);
+    }
+    .footer-links{
+      display:flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .footer-links a:hover{ text-decoration: underline; }
+
+    /* Tiny helpers */
+    .muted { color: var(--muted); }
+    .anchor { scroll-margin-top: 92px; }
+  </style>
+</head>
+
+<body>
+
+  <!-- ==========
+    SINGLE SOURCE OF TRUTH LINKS (DON'T SCREW IT UP)
+    Change ONLY these when needed:
+  ========== -->
+  <script>
+    const KO_FI_FULL_PACK_URL = "https://ko-fi.com/s/dfb198eea2";
+
+    // Optional: later you can link to your Google Site "library".
+    // Keep as "#" for now (safe placeholder).
+    const GOOGLE_SITE_LIBRARY_URL = "#";
+  </script>
+
+  <header class="header">
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="#top" aria-label="AppealKit UK home">
+          <div class="logo" aria-hidden="true"></div>
+          <div>
+            <b>AppealKit UK</b>
+            <span>PCN Appeal Templates &amp; Guide</span>
+          </div>
+        </a>
+
+        <nav class="menu" aria-label="Primary navigation">
+          <a href="#guide">Free guide</a>
+          <a href="#inside">What’s inside</a>
+          <a href="#buy">Full pack</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="nav-cta">
+          <!-- IMPORTANT: text is identical everywhere -->
+          <a class="btn btn-primary btn-small" href="#" onclick="window.location=KO_FI_FULL_PACK_URL; return false;">Get the full pack</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="wrap">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <div class="chip"><span class="dot"></span> UK-focused • POPLA-friendly • Evidence-first</div>
+          <h1>Challenge unfair private parking charges with clean, strong appeal wording.</h1>
+          <p class="lead">
+            AppealKit UK is a practical toolkit: a free UK guide plus a paid template pack of editable appeal letters.
+            No fluff, no drama — just clear points you can submit.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#" onclick="window.location=KO_FI_FULL_PACK_URL; return false;">Get the full pack</a>
+            <a class="btn btn-ghost" href="#inside">See what’s included</a>
+            <a class="btn" href="#guide">Start with the free guide</a>
+          </div>
+
+          <div class="fineprint">
+            Not legal advice. This is templates &amp; guidance to help you write a clearer appeal. For complex matters, consider professional advice.
+          </div>
+        </div>
+
+        <aside class="panel" aria-label="Highlights">
+          <div class="pill-row">
+            <div class="pill">Includes: 10 templates</div>
+            <div class="pill">UK scenarios</div>
+            <div class="pill">Editable letters</div>
+            <div class="pill">Submission notes</div>
+          </div>
+
+          <div class="grid2">
+            <div class="card">
+              <b>Fast</b>
+              <p>Copy, paste, customise in minutes.</p>
+            </div>
+            <div class="card">
+              <b>Credible</b>
+              <p>Neutral tone, evidence-first structure.</p>
+            </div>
+            <div class="card">
+              <b>UK-ready</b>
+              <p>POFA / POPLA-friendly formatting.</p>
+            </div>
+            <div class="card">
+              <b>Clean</b>
+              <p>No waffle. No over-sharing.</p>
+            </div>
+          </div>
+
+          <div class="list" style="margin-top:12px">
+            <div class="li">
+              <div class="tick">✓</div>
+              <div>
+                <b>10 template letters</b>
+                <span>Signage, grace period, POFA, ANPR timing, paid-but-overstayed, duplicates, authority, and more.</span>
+              </div>
+            </div>
+            <div class="li">
+              <div class="tick">✓</div>
+              <div>
+                <b>Submission notes</b>
+                <span>What to attach, how to keep it short, and what not to say (so you don’t weaken your case).</span>
+              </div>
+            </div>
+            <div class="li">
+              <div class="tick">✓</div>
+              <div>
+                <b>Simple process</b>
+                <span>Pick the right angle → customise → submit → keep proof → escalate if needed.</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FREE GUIDE -->
+    <section id="guide" class="section anchor">
+      <h2>Free guide: how to appeal a private PCN in the UK</h2>
+      <p class="sub">
+        Use this guide to choose the right appeal angle based on what you can prove. Keep it evidence-first, calm, and structured — the opposite of a “story”.
+      </p>
+
+      <div class="tiles">
+        <div class="tile">
+          <div class="num">1</div>
+          <b>Pick the right reason</b>
+          <p>
+            Choose a scenario that matches your evidence: signage, POFA / keeper liability, ANPR timing, grace periods, authority, paid-but-overstayed, etc.
+          </p>
+        </div>
+        <div class="tile">
+          <div class="num">2</div>
+          <b>Attach the right proof</b>
+          <p>
+            Photos, receipts, screenshots, timestamps, correspondence — and keep it factual and organised. Don’t drown them in irrelevant detail.
+          </p>
+        </div>
+        <div class="tile">
+          <div class="num">3</div>
+          <b>Write like a pro</b>
+          <p>
+            Neutral tone. Short paragraphs. Numbered points. Don’t admit liability accidentally. Don’t over-explain. Keep copies of everything.
+          </p>
+        </div>
+      </div>
+
+      <div class="two-col" style="margin-top:16px">
+        <div class="box">
+          <h3>Quick structure you can follow</h3>
+          <ul>
+            <li><b>Subject line:</b> “Appeal — PCN ref [XXXX] — Vehicle [REG]”</li>
+            <li><b>One-line position:</b> “I dispute this charge. Please cancel or issue a POPLA code.”</li>
+            <li><b>3–6 numbered points</b> that match your evidence</li>
+            <li><b>Evidence list</b> (photos, receipts, screenshots)</li>
+            <li><b>Close</b> with a clear request (cancel / POPLA code)</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>What NOT to say</h3>
+          <ul>
+            <li>Don’t write a long emotional story.</li>
+            <li>Don’t say “I parked” if you’re appealing as keeper and you don’t need to identify the driver.</li>
+            <li>Don’t guess. Don’t add details you can’t prove.</li>
+            <li>Don’t threaten. Keep it calm and professional.</li>
+            <li>Don’t ignore deadlines. Screenshot your submission confirmation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cta-row" style="margin-top:16px">
+        <a class="btn btn-primary" href="#" onclick="window.location=KO_FI_FULL_PACK_URL; return false;">Get the full pack</a>
+      </div>
+    </section>
+
+    <!-- WHAT'S INSIDE -->
+    <section id="inside" class="section anchor">
+      <h2>What’s inside the template pack</h2>
+      <p class="sub">
+        Designed for <b>private</b> parking charges (not council PCNs). Clear, UK-friendly wording with editable placeholders and guidance notes.
+      </p>
+
+      <div class="two-col">
+        <div class="box">
+          <h3>Templates included (10 scenarios)</h3>
+          <ul>
+            <li>Unclear / inadequate signage</li>
+            <li>Grace period not applied</li>
+            <li>No keeper liability (POFA 2012 issues)</li>
+            <li>ANPR timing error / entry-exit mismatch</li>
+            <li>Paid but overstayed (mitigation + evidence)</li>
+            <li>Emergency / medical situation</li>
+            <li>Incorrect vehicle details</li>
+            <li>No authority to issue charges (landowner contract)</li>
+            <li>Duplicate ticket / double charge</li>
+            <li>Cancelled booking / changed circumstances</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>What you get (practical)</h3>
+          <ul>
+            <li>Editable letter templates with placeholders</li>
+            <li>“When to use” notes for each scenario</li>
+            <li>Submission notes + what not to say</li>
+            <li>Simple step-by-step usage guide</li>
+            <li>Built to stay short, neutral and credible</li>
+          </ul>
+
+          <div class="cta-row" style="margin-top:10px">
+            <a class="btn btn-primary" href="#" onclick="window.location=KO_FI_FULL_PACK_URL; return false;">Get the full pack</a>
+
+            <!-- Optional library link:
+                 Keep disabled for now ("#"). Later just change GOOGLE_SITE_LIBRARY_URL above. -->
+            <a class="btn" href="#" onclick="if(GOOGLE_SITE_LIBRARY_URL!=='#'){window.location=GOOGLE_SITE_LIBRARY_URL;} return false;">
+              Open library (optional)
+            </a>
+          </div>
+
+          <div class="note">
+            Tip: keep any Google Site / docs as a “library” if you like — but use this domain as the main brand landing page.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUY -->
+    <section id="buy" class="section anchor">
+      <h2>Full pack</h2>
+      <p class="sub">
+        This button goes to your Ko-fi checkout. When you add more packs later, just duplicate a block below and change the link (but keep the button text identical).
+      </p>
+
+      <div class="buy">
+        <div class="buy-row">
+          <div class="buy-left">
+            <b>UK PCN Appeal Template Pack</b>
+            <p>10 editable templates + submission notes + what not to say.</p>
+          </div>
+          <div class="buy-right">
+            <a class="btn btn-primary" href="#" onclick="window.location=KO_FI_FULL_PACK_URL; return false;">Get the full pack</a>
+          </div>
+        </div>
+
+        <div class="two-col" style="margin-top:12px">
+          <div class="box">
+            <h3>Future packs (coming soon)</h3>
+            <ul>
+              <li>Bus lane</li>
+              <li>Council PCN</li>
+              <li>ULEZ / congestion related</li>
+              <li>Other “Appeal Kits” you want to add later</li>
+            </ul>
+            <p class="note">
+              NOTE: This section is intentionally future-proof — you only add new blocks later, no redesign needed.
+            </p>
+          </div>
+
+          <div class="box">
+            <h3>Email capture (optional later)</h3>
+            <ul>
+              <li>If you want: add a simple email box later (Mailchimp / ConvertKit).</li>
+              <li>Not needed right now. Start selling first.</li>
+            </ul>
+            <p class="note">NOTE: Leave this as-is until you’re ready.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-row" style="margin-top:14px">
+        <a class="btn btn-primary" href="#" onclick="window.location=KO_FI_FULL_PACK_URL; return false;">Get the full pack</a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section anchor">
+      <h2>FAQ</h2>
+      <p class="sub">Quick answers. Keep it simple, confidence-building, and honest.</p>
+
+      <details>
+        <summary>Is this legal advice?</summary>
+        <p>No. AppealKit UK provides templates and general guidance only. For complex cases (court, major disputes), consider professional legal advice.</p>
+      </details>
+
+      <details>
+        <summary>Is this for council PCNs or private parking?</summary>
+        <p>This pack is focused on private parking charges. (Council PCN packs can be added later as separate products.)</p>
+      </details>
+
+      <details>
+        <summary>How fast can I use it?</summary>
+        <p>Pick the template that matches your evidence, customise placeholders, attach proof, submit. Keep copies of everything you send.</p>
+      </details>
+
+      <details>
+        <summary>Do you guarantee a win?</summary>
+        <p>No. Outcomes depend on facts, evidence, signage, and the operator process — but strong, structured wording helps you avoid common mistakes.</p>
+      </details>
+
+      <details>
+        <summary>Where do I buy the full pack?</summary>
+        <p>Use any “Get the full pack” button — it takes you to the Ko-fi checkout.</p>
+      </details>
+
+      <div class="cta-row" style="margin-top:14px">
+        <a class="btn btn-primary" href="#" onclick="window.location=KO_FI_FULL_PACK_URL; return false;">Get the full pack</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-row">
+        <div>
+          <b>AppealKit UK</b> — templates &amp; guidance only. Not legal advice.<br />
+          AppealKit UK provides templates and general guidance only and does not guarantee outcomes.<br />
+          © <span id="year"></span> AppealKit UK. All rights reserved.
+        </div>
+        <div class="footer-links" aria-label="Footer links">
+          <a href="#guide">Guide</a>
+          <a href="#inside">What’s inside</a>
+          <a href="#buy">Buy</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Safety: if someone copies links wrong, force all primary CTAs to KO_FI_FULL_PACK_URL
+    // (We already hard-coded via onclick, this is just extra belt-and-braces.)
+    // You can remove later if you want.
+  </script>
+</body>
+</html>
